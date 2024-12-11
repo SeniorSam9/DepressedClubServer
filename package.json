@@ -9,6 +9,7 @@
   "author": "Rayan Aljoufi (SeniorSam)",
   "license": "ISC",
   "dependencies": {
+    "better-sqlite3": "^11.7.0",
     "body-parser": "^1.20.3",
     "cookie-parser": "^1.4.7",
     "cors": "^2.8.5",
