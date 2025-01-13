@@ -3,6 +3,7 @@ const express = require("express");
 const server = express();
 const port = 3000;
 const cors = require("cors");
+
 const letterRoute = require("./src/routes/lettersRoute");
 
 // configs
