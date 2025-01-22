@@ -1,6 +1,6 @@
 const db = require("better-sqlite3")("main.db");
 
-const addLetter = (letter) => {
+const addLetterDB = (letter) => {
   db.prepare(
     "INSERT INTO letters (id, message, views, ownerId) VALUES (?, ?, ?, ?)"
   ).run(letter.id, letter.message, letter.views, letter.ownerId);
@@ -18,4 +18,4 @@ const printAllTables = () => {
   });
 };
 
-export { addLetter, printAllTables };
+module.exports = { addLetterDB, printAllTables };
